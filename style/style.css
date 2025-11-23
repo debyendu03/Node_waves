@@ -212,7 +212,6 @@ span {
 }
 
 .text-end {
-    text-align: right !important;
 }
 
 .position-relative {
@@ -495,7 +494,8 @@ span {
     font-size: 2rem;
 }
 
-.slider-content .text-content .des-and-button .btn {
+.slider-content .text-content .des-and-button .btn,
+.analytics-section .btn {
     font-family: Montserrat;
     font-weight: 400;
     font-style: regular;
@@ -644,6 +644,7 @@ span {
     display: flex;
     animation: scroll 30s linear infinite;
     width: fit-content;
+    gap: 0;
 }
 
 @keyframes scroll {
@@ -651,7 +652,7 @@ span {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(calc(-100% / 3));
     }
 }
 
@@ -676,3 +677,96 @@ span {
 }
 
 /* infinite section css end */
+/* analytics sectioin start  */
+.heading-div div {
+    min-width: 20%;
+    width: fit-content;
+}
+.heading-div div span {
+    font-size: 2rem;
+}
+
+.analytics-section .mexc .floating-coin-img img {
+    top: 0;
+    left: -10%;
+    width: 10%;
+}
+.analytics-section .quickswap .floating-coin-img img {
+    top: 0;
+    right: -10%;
+    width: 10%;
+}
+/* analytics sectioin end  */
+
+/* what is node section end  */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+    font-family: "Inter", sans-serif;
+    /* Use a very dark background to mimic the original image */
+    background-color: #0d0014;
+    color: #fff;
+}
+
+.neon-background {
+    /* Mimics the background texture shown in the image */
+    background-image: url("https://placehold.co/1200x800/0d0014/0d0014?text="); /* Placeholder for dark textured background */
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.5rem; /* Consistent rounding */
+}
+
+.text-neon {
+    /* Custom CSS for neon text effect */
+    color: #ff00ff; /* Bright magenta/pink */
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px rgba(255, 0, 255, 0.4);
+}
+
+.text-outline-pink {
+    /* For the large numbers (01, 02, 03) */
+    font-size: 2.5rem; /* Larger font size for numbers */
+    font-weight: 800;
+    line-height: 1;
+}
+
+.text-outline-01 {
+    color: #00ffff;
+} /* Cyan */
+.text-outline-02 {
+    color: #00ff00;
+} /* Green */
+.text-outline-03 {
+    color: #ffa500;
+} /* Orange */
+
+/* Mimic the gradient/outline on the main header */
+.header-outline {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 900;
+    line-height: 1.1;
+    /* Apply a gradient or split color */
+}
+
+.header-outline span {
+    /* This is where the neon glow is applied */
+    display: inline-block;
+    color: white; /* Default color for the first part */
+}
+
+.header-outline .node-word {
+    color: #ff00ff; /* Neon color for NODE */
+    text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff;
+}
+
+/* Responsive spacing for mobile */
+@media (max-width: 767.98px) {
+    .feature-item {
+        margin-bottom: 2rem;
+    }
+}
+
+/* what is node section end  */
