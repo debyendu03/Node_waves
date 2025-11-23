@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>NodeWaves - New Era of Mining</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            /* Custom styles to mimic the dark/red aesthetic and large text */
+            body {
+                /* Replace with your actual dark/red background image or gradient */
+                background-color: #000000;
+                color: #ffffff;
+                font-family: Arial, sans-serif; /* Replace with your specific custom font */
+            }
+
+            .hero-section {
+                /* Full viewport height to center content vertically */
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 3rem 1rem;
+                /* You would add a background image here to match the 3D grid effect */
+                background-image: url("path/to/your/background-texture.png");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .heading-nodewaves {
+                font-size: clamp(3rem, 10vw, 7rem); /* Responsive large font size */
+                font-weight: 900;
+                line-height: 0.8;
+                letter-spacing: -2px;
+            }
+
+            .heading-nodewaves .text-pink {
+                color: #ff1a5a; /* Approximate bright red/pink color */
+            }
+
+            .heading-mining {
+                font-size: clamp(2rem, 8vw, 5rem); /* Responsive large font size */
+                font-weight: 300;
+                letter-spacing: 5px;
+            }
+
+            .btn-custom-red {
+                background-color: #ff1a5a; /* Match the red button color */
+                border-color: #ff1a5a;
+                color: #ffffff;
+                padding: 0.75rem 2rem;
+                font-weight: bold;
+                border-radius: 0.3rem;
+                transition: background-color 0.3s ease;
+            }
+
+            .btn-custom-red:hover {
+                background-color: #e60045;
+                border-color: #e60045;
+                color: #ffffff;
+            }
+
+            .coin-image {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .coin-stand {
+                /* Placeholder for the 3D coin on a red pedestal effect */
+                position: relative;
+                z-index: 10; /* Ensure coin is above any background elements */
+            }
+
+            .slide-indicator {
+                position: absolute;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1.25rem;
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            /* Adjustments for the mobile view (first screenshot) */
+            @media (max-width: 576px) {
+                .slide-indicator {
+                    left: 1rem;
+                    transform: translateX(0);
+                    bottom: 1rem;
+                }
+            }
+
+            /* Responsive placement adjustment for the second screenshot layout */
+            .text-content {
+                z-index: 20; /* Ensure text is on top */
+            }
+
+            /* Responsive design to align text content to the left */
+            @media (min-width: 992px) {
+                .text-content {
+                    text-align: left !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <section class="hero-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-5 mb-lg-0 text-center text-content">
+                        <h1 class="heading-nodewaves"><span class="text-pink">NODE</span>WAVES</h1>
+                        <h2 class="heading-nodewaves heading-mining mb-4">NEW ERA OF MINING</h2>
+
+                        <p class="lead mb-4" style="font-weight: 300">
+                            Mining **NWS tokens** with **Founder Node** and **Lite node**
+                        </p>
+
+                        <button class="btn btn-custom-red btn-lg">CONNECT WALLET</button>
+                    </div>
+
+                    <div class="col-lg-6 text-center coin-stand">
+                        <img src="path/to/coin.png" alt="NodeWaves Coin" class="coin-image" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="slide-indicator">**1/4**</div>
+        </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
