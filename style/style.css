@@ -698,75 +698,104 @@ span {
 }
 /* analytics sectioin end  */
 
-/* what is node section end  */
+/* <!-- what is node section start --> */
+. .what-is-node-section {
+    position: relative;
+    padding: 60px 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #000 0%, #1a0a1a 100%);
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.wave-background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 250px;
+    background: radial-gradient(ellipse at bottom, rgba(138, 43, 226, 0.3) 0%, transparent 70%);
+    z-index: 0;
+}
 
-body {
-    font-family: "Inter", sans-serif;
-    /* Use a very dark background to mimic the original image */
-    background-color: #0d0014;
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.main-title .node {
+    color: #ff1744;
+}
+
+.intro-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 0;
+}
+
+.feature-number {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.feature-number.blue {
+    color: #00a8ff;
+}
+
+.feature-number.green {
+    color: #7ed321;
+}
+
+.feature-number.yellow {
+    color: #ffd700;
+}
+
+.feature-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
     color: #fff;
 }
 
-.neon-background {
-    /* Mimics the background texture shown in the image */
-    background-image: url("https://placehold.co/1200x800/0d0014/0d0014?text="); /* Placeholder for dark textured background */
-    background-size: cover;
-    background-position: center;
-    padding: 4rem 0;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0.5rem; /* Consistent rounding */
+.feature-description {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #aaa;
 }
 
-.text-neon {
-    /* Custom CSS for neon text effect */
-    color: #ff00ff; /* Bright magenta/pink */
-    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px rgba(255, 0, 255, 0.4);
+.cubes-image {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 30px rgba(138, 43, 226, 0.6));
+    animation: float 6s ease-in-out infinite;
 }
 
-.text-outline-pink {
-    /* For the large numbers (01, 02, 03) */
-    font-size: 2.5rem; /* Larger font size for numbers */
-    font-weight: 800;
-    line-height: 1;
-}
-
-.text-outline-01 {
-    color: #00ffff;
-} /* Cyan */
-.text-outline-02 {
-    color: #00ff00;
-} /* Green */
-.text-outline-03 {
-    color: #ffa500;
-} /* Orange */
-
-/* Mimic the gradient/outline on the main header */
-.header-outline {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    font-weight: 900;
-    line-height: 1.1;
-    /* Apply a gradient or split color */
-}
-
-.header-outline span {
-    /* This is where the neon glow is applied */
-    display: inline-block;
-    color: white; /* Default color for the first part */
-}
-
-.header-outline .node-word {
-    color: #ff00ff; /* Neon color for NODE */
-    text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff;
-}
-
-/* Responsive spacing for mobile */
-@media (max-width: 767.98px) {
-    .feature-item {
-        margin-bottom: 2rem;
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(3deg);
     }
 }
 
-/* what is node section end  */
+/* Mobile: Stack vertically */
+@media (max-width: 767px) {
+    .main-title {
+        font-size: 36px;
+    }
+
+    .feature-number {
+        font-size: 32px;
+    }
+
+    .cubes-image {
+        max-width: 200px;
+    }
+}
+/* <!-- what is node section end --> */
