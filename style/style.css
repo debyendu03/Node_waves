@@ -883,8 +883,6 @@ span {
 }
 /* <!-- what is node section end --> */
 
-/* key */
-
 /*__________ key benefit  section start__________- */
 .key-benefits-section {
     padding: 40px 0;
@@ -923,3 +921,85 @@ span {
 }
 
 /*__________ key benefit  section  end__________- */
+
+/*__________ How does nodewAVES WORKS section  start__________- */
+
+.how-it-works-section .solutions-section {
+    padding: 60px 0;
+    background: linear-gradient(180deg, #0a0000 0%, #1a0510 100%);
+}
+
+.how-it-works-section .features-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    .how-it-works-section .features-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+.how-it-works-section .feature-card {
+    flex: 1;
+    background: rgba(139, 0, 0, 0.1);
+    border: 1px solid rgba(139, 0, 0, 0.3);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.how-it-works-section .feature-card:hover {
+    background: rgba(139, 0, 0, 0.15);
+    border-color: rgba(139, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.how-it-works-section .feature-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how-it-works-section .feature-icon img {
+    max-width: 100%;
+    height: auto;
+    filter: brightness(0) invert(1);
+}
+
+.how-it-works-section .feature-content {
+    flex: 1;
+}
+
+.how-it-works-section .feature-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.how-it-works-section .feature-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #ccc;
+    margin: 0;
+}
+
+@media (max-width: 767px) {
+    .how-it-works-section .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* How does nodewAVES WORKS section end */
