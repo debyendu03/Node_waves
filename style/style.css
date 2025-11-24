@@ -29,6 +29,7 @@
     --color-Black: #000;
     --color-White: #fff;
     --Primary-Gradient: linear-gradient(92.87deg, #e30f2e, #db1360);
+    --custom-pink: #df1147;
 }
 
 body {
@@ -717,11 +718,11 @@ span {
     z-index: 0;
 }
 
-.main-title {
+.main-title,
+.key-benefits-section .section-title {
     font-size: 3.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    /* margin-bottom: 20px; */
     font-family: "Aline";
     line-height: 1.1;
     color: white;
@@ -732,23 +733,23 @@ span {
 .feature-title,
 .feature-description {
     font-size: 1.2rem;
-    color: #ccc;
+    color: #fff;
     margin-bottom: 0;
     font-family: "Montserrat";
     font-weight: 400;
     font-style: regular;
 }
-.feature-number,
+
 .feature-title,
-.feature-description {
+.key-benefits-section .benefit-card .benefit-title {
     text-transform: uppercase;
-    color: #fff;
 }
 .feature-title {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
+    margin-bottom: .3rem;
 }
 .feature-description {
-    font-size: 0.75rem;
+    font-size: 1rem;
 }
 .feature-number {
     font-size: 3rem;
@@ -756,8 +757,9 @@ span {
     margin-top: -11px;
 }
 
-.main-title .node {
-    color: #ff1744;
+.main-title .node,
+.key-benefits-section .benefits {
+    color: var(--custom-pink);
 }
 
 .feature-number.blue {
@@ -800,10 +802,10 @@ span {
         font-size: 1.15rem;
     }
     .feature-title {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
     .feature-description {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
     }
     .feature-number {
         font-size: 4rem;
@@ -827,11 +829,11 @@ span {
         font-size: 1.6rem;
     }
     .feature-title {
-        font-size: 2.75rem;
+        font-size: 3.1rem;
     }
     .feature-description {
-        font-size: 1.1rem;
-        max-width: 85%;
+        font-size: 1.5rem;
+        max-width: 95%;
     }
     .feature-number {
         font-size: 4.5rem;
@@ -855,10 +857,10 @@ span {
         font-size: 1.9rem;
     }
     .feature-title {
-        font-size: 3.5rem;
+        font-size: 3.9rem;
     }
     .feature-description {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .feature-number {
         font-size: 5.5rem;
@@ -869,3 +871,80 @@ span {
 }
 
 /* <!-- what is node section end --> */
+/*__________ How does nodewAVES WORKS section  start__________- */
+.key-benefits-section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    /* margin-bottom: 60px; */
+    font-size: 3rem;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+}
+
+.section-title .key {
+    color: #fff;
+}
+
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .benefits-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .benefit-card {
+        flex: 1;
+    }
+}
+
+.benefit-card {
+    text-align: start;
+    padding: 30px 20px;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.benefit-icon {
+    width: 55px;
+    height: 55px;
+    margin: 0 0 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit-icon img {
+    max-width: 100%;
+    height: auto;
+}
+
+.benefit-title {
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.benefit-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ccc;
+}
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 2rem;
+    }
+}
+/*__________ How does nodewAVES WORKS section  end__________- */
