@@ -230,8 +230,10 @@ span {
 .content-section {
     /* Content section wrapper */
     position: relative;
+    z-index: -1;
     max-width: 1600px;
     margin: 0 auto;
+    background-color: #0d0404;
 }
 
 .MinWidth {
