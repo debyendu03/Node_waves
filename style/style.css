@@ -740,15 +740,16 @@ span {
     font-style: regular;
 }
 
-.feature-title,
-.key-benefits-section .benefit-card .benefit-title {
+.feature-title {
     text-transform: uppercase;
 }
-.feature-title {
+.feature-title,
+.key-benefits-section .benefit-card .benefit-title {
     font-size: 1.4rem;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
 }
-.feature-description {
+.feature-description,
+.benefit-description {
     font-size: 1rem;
 }
 .feature-number {
@@ -801,10 +802,12 @@ span {
     .intro-text {
         font-size: 1.15rem;
     }
-    .feature-title {
+    .feature-title,
+    .key-benefits-section .benefit-card .benefit-title {
         font-size: 2.3rem;
     }
-    .feature-description {
+    .feature-description,
+    .benefit-description {
         font-size: 1.3rem;
     }
     .feature-number {
@@ -828,10 +831,12 @@ span {
     .intro-text {
         font-size: 1.6rem;
     }
-    .feature-title {
+    .feature-title,
+    .key-benefits-section .benefit-card .benefit-title {
         font-size: 3.1rem;
     }
-    .feature-description {
+    .feature-description,
+    .benefit-description {
         font-size: 1.5rem;
         max-width: 95%;
     }
@@ -856,10 +861,12 @@ span {
     .intro-text {
         font-size: 1.9rem;
     }
-    .feature-title {
+    .feature-title,
+    .key-benefits-section .benefit-card .benefit-title {
         font-size: 3.9rem;
     }
-    .feature-description {
+    .feature-description,
+    .benefit-description {
         font-size: 1.8rem;
     }
     .feature-number {
@@ -878,38 +885,11 @@ span {
 
 .section-title {
     text-align: center;
-    /* margin-bottom: 60px; */
-    font-size: 3rem;
-    font-weight: 700;
-    /* letter-spacing: 2px; */
-}
-
-.section-title .key {
-    color: #fff;
-}
-
-.benefits-container {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-@media (min-width: 768px) {
-    .benefits-container {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        gap: 30px;
-    }
-
-    .benefit-card {
-        flex: 1;
-    }
 }
 
 .benefit-card {
     text-align: start;
-    padding: 30px 20px;
+    padding: 15px 20px;
     transition: transform 0.3s ease;
 }
 
@@ -933,18 +913,6 @@ span {
 
 .benefit-title {
     margin-bottom: 1.5rem;
-    text-transform: uppercase;
 }
 
-.benefit-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #ccc;
-}
-
-@media (max-width: 767px) {
-    .section-title {
-        font-size: 2rem;
-    }
-}
 /*__________ How does nodewAVES WORKS section  end__________- */
