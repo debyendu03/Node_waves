@@ -211,9 +211,6 @@ span {
     justify-content: space-between !important;
 }
 
-.text-end {
-}
-
 .position-relative {
     position: relative !important;
 }
@@ -230,7 +227,6 @@ span {
 .content-section {
     /* Content section wrapper */
     position: relative;
-    z-index: -1;
     max-width: 1600px;
     margin: 0 auto;
     background-color: #0d0404;
@@ -459,6 +455,9 @@ span {
 
 /* style start */
 /* slider section start */
+.slider-section {
+    z-index: 1;
+}
 
 .slider-content {
     background: linear-gradient(0deg, transparent 5%, rgba(0, 0, 0, 1) 90%);
