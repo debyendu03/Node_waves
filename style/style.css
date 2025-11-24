@@ -704,9 +704,7 @@ span {
 /* <!-- what is node section start --> */
 .what-is-node-section {
     position: relative;
-    padding: 60px 0;
     overflow: hidden;
-    background: linear-gradient(to bottom, #000 0%, #1a0a1a 100%);
 }
 
 .wave-background {
@@ -720,58 +718,63 @@ span {
 }
 
 .main-title {
-    font-size: 48px;
+    font-size: 3.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    font-family: "Aline";
     line-height: 1.1;
+    color: white;
+}
+
+.intro-text,
+.feature-number,
+.feature-title,
+.feature-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 0;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: regular;
+}
+.feature-number,
+.feature-title,
+.feature-description {
+    text-transform: uppercase;
+    color: #fff;
+}
+.feature-title {
+    font-size: 1.1rem;
+}
+.feature-description {
+    font-size: 0.75rem;
+}
+.feature-number {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+    margin-top: -11px;
 }
 
 .main-title .node {
     color: #ff1744;
 }
 
-.intro-text {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #ccc;
-    margin-bottom: 0;
-}
-
-.feature-number {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
 .feature-number.blue {
-    color: #00a8ff;
+    color: #0aadff;
+    margin-left: 1rem;
 }
 
 .feature-number.green {
-    color: #7ed321;
+    color: #84ff0a;
 }
 
 .feature-number.yellow {
-    color: #ffd700;
-}
-
-.feature-title {
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-.feature-description {
-    font-size: 13px;
-    line-height: 1.7;
-    color: #aaa;
+    color: #fbc16f;
 }
 
 .cubes-image {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
     filter: drop-shadow(0 0 30px rgba(138, 43, 226, 0.6));
     animation: float 6s ease-in-out infinite;
@@ -787,18 +790,82 @@ span {
     }
 }
 
-/* Mobile: Stack vertically */
-@media (max-width: 767px) {
+@media screen and (min-width: 768px) {
     .main-title {
-        font-size: 36px;
+        font-size: 6.5rem;
+        padding-bottom: 2rem;
     }
 
+    .intro-text {
+        font-size: 1.15rem;
+    }
+    .feature-title {
+        font-size: 2rem;
+    }
+    .feature-description {
+        font-size: 0.8rem;
+    }
     .feature-number {
-        font-size: 32px;
+        font-size: 4rem;
     }
-
     .cubes-image {
-        max-width: 200px;
+        max-width: 60%;
     }
 }
+
+@media screen and (min-width: 992px) {
+    .main-title {
+        font-size: 8.8rem;
+        padding-bottom: 3rem;
+    }
+
+    .intro-text {
+        font-size: 1.7rem;
+    }
+
+    .intro-text {
+        font-size: 1.6rem;
+    }
+    .feature-title {
+        font-size: 2.75rem;
+    }
+    .feature-description {
+        font-size: 1.1rem;
+        max-width: 85%;
+    }
+    .feature-number {
+        font-size: 4.5rem;
+    }
+    .cubes-image {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-title {
+        font-size: 10.5rem;
+        padding-bottom: 6rem;
+    }
+
+    .intro-text {
+        font-size: 1.8rem;
+    }
+
+    .intro-text {
+        font-size: 1.7rem;
+    }
+    .feature-title {
+        font-size: 3.5rem;
+    }
+    .feature-description {
+        font-size: 1.5rem;
+    }
+    .feature-number {
+        font-size: 5.5rem;
+    }
+    .cubes-image {
+        max-width: 90%;
+    }
+}
+
 /* <!-- what is node section end --> */
