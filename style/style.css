@@ -31,7 +31,7 @@
     --Primary-Gradient: linear-gradient(92.87deg, #e30f2e, #db1360);
 }
 
-bo {
+body {
     box-sizing: border-box;
 }
 
@@ -699,7 +699,7 @@ span {
 /* analytics sectioin end  */
 
 /* <!-- what is node section start --> */
-. .what-is-node-section {
+.what-is-node-section {
     position: relative;
     padding: 60px 0;
     overflow: hidden;
