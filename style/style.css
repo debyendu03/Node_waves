@@ -471,6 +471,34 @@ span {
     left: 0;
     z-index: -1;
 }
+.slider-bg-1 {
+    transform: scale(1.2) translate(-27%, 34%);
+}
+@media (min-width: 425px) {
+    .slider-bg-1 {
+        transform: scale(1.2) translate(-25%, 34%);
+    }
+}
+@media (min-width: 768px) {
+    .slider-bg-1 {
+        transform: scale(1.5) translate(15%, 24%);
+    }
+}
+@media (min-width: 992px) {
+    .slider-bg-1 {
+        transform: scale(1.5) translate(14%, 24%);
+    }
+}
+@media (min-width: 1200px) {
+    .slider-bg-1 {
+        transform: scale(1.5) translate(16%, 24%);
+    }
+}
+@media (min-width: 1400px) {
+    .slider-bg-1 {
+        transform: scale(1.5) translate(14%, 24%);
+    }
+}
 
 /* Styling for the main headings */
 
@@ -741,16 +769,15 @@ span {
     font-style: regular;
 }
 
-.feature-title {
-    text-transform: uppercase;
-}
 .feature-title,
 .key-benefits-section .benefit-card .benefit-title {
+    text-transform: uppercase;
+}
+.feature-title {
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
 }
-.feature-description,
-.benefit-description {
+.feature-description {
     font-size: 1rem;
 }
 .feature-number {
@@ -805,12 +832,10 @@ span {
     .intro-text {
         font-size: 1.15rem;
     }
-    .feature-title,
-    .key-benefits-section .benefit-card .benefit-title {
+    .feature-title {
         font-size: 2.3rem;
     }
-    .feature-description,
-    .benefit-description {
+    .feature-description {
         font-size: 1.3rem;
     }
     .feature-number {
@@ -835,12 +860,10 @@ span {
     .intro-text {
         font-size: 1.6rem;
     }
-    .feature-title,
-    .key-benefits-section .benefit-card .benefit-title {
+    .feature-title {
         font-size: 3.1rem;
     }
-    .feature-description,
-    .benefit-description {
+    .feature-description {
         font-size: 1.5rem;
         max-width: 95%;
     }
@@ -866,12 +889,10 @@ span {
     .intro-text {
         font-size: 1.9rem;
     }
-    .feature-title,
-    .key-benefits-section .benefit-card .benefit-title {
+    .feature-title {
         font-size: 3.9rem;
     }
-    .feature-description,
-    .benefit-description {
+    .feature-description {
         font-size: 1.8rem;
     }
     .feature-number {
@@ -892,11 +913,38 @@ span {
 
 .section-title {
     text-align: center;
+    /* margin-bottom: 60px; */
+    font-size: 3rem;
+    font-weight: 700;
+    /* letter-spacing: 2px; */
+}
+
+.section-title .key {
+    color: #fff;
+}
+
+.benefits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+@media (min-width: 768px) {
+    .benefits-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .benefit-card {
+        flex: 1;
+    }
 }
 
 .benefit-card {
     text-align: start;
-    padding: 15px 20px;
+    padding: 30px 20px;
     transition: transform 0.3s ease;
 }
 
