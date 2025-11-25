@@ -760,7 +760,8 @@ span {
 .intro-text,
 .feature-number,
 .feature-title,
-.feature-description {
+.feature-description,
+.benefit-description {
     font-size: 1.2rem;
     color: #fff;
     margin-bottom: 0;
@@ -773,13 +774,12 @@ span {
 .key-benefits-section .benefit-card .benefit-title {
     text-transform: uppercase;
 }
-.feature-title {
+.feature-title,
+.benefit-title {
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
 }
-.feature-description {
-    font-size: 1rem;
-}
+
 .feature-number {
     font-size: 3rem;
     margin-right: 1.5rem;
@@ -824,20 +824,22 @@ span {
 
 @media screen and (min-width: 768px) {
     .main-title,
+    .key-benefits-section .section-title,
     .how-it-works-section .section-title {
         font-size: 5rem;
         padding-bottom: 2rem;
     }
 
-    .intro-text {
-        font-size: 1.15rem;
-    }
-    .feature-title {
-        font-size: 2.3rem;
-    }
-    .feature-description {
+    .intro-text,
+    .feature-description,
+    .benefit-description {
         font-size: 1.3rem;
     }
+    .feature-title,
+    .benefit-title {
+        font-size: 1.5rem;
+    }
+
     .feature-number {
         font-size: 4rem;
     }
@@ -848,24 +850,23 @@ span {
 
 @media screen and (min-width: 992px) {
     .main-title,
+    .key-benefits-section .section-title,
     .how-it-works-section .section-title {
-        font-size: 6.5rem;
+        font-size: 6rem;
         padding-bottom: 3rem;
     }
 
-    .intro-text {
-        font-size: 1.7rem;
+    .intro-text,
+    .feature-description,
+    .benefit-description {
+        font-size: 1.45rem;
     }
-
-    .intro-text {
-        font-size: 1.6rem;
-    }
-    .feature-title {
-        font-size: 3.1rem;
+    .feature-title,
+    .benefit-title {
+        font-size: 1.8rem;
     }
     .feature-description {
-        font-size: 1.5rem;
-        max-width: 95%;
+        max-width: 80%;
     }
     .feature-number {
         font-size: 4.5rem;
@@ -877,23 +878,23 @@ span {
 
 @media screen and (min-width: 1200px) {
     .main-title,
+    .key-benefits-section .section-title,
     .how-it-works-section .section-title {
-        font-size: 7.5rem;
-        padding-bottom: 6rem;
+        font-size: 7rem;
+        padding-bottom: 3rem;
     }
 
-    .intro-text {
-        font-size: 1.8rem;
+    .intro-text,
+    .feature-description,
+    .benefit-description {
+        font-size: 1.6rem;
     }
-
-    .intro-text {
-        font-size: 1.9rem;
-    }
-    .feature-title {
-        font-size: 3.9rem;
+    .feature-title,
+    .benefit-title {
+        font-size: 2.2rem;
     }
     .feature-description {
-        font-size: 1.8rem;
+        max-width: 75%;
     }
     .feature-number {
         font-size: 5.5rem;
