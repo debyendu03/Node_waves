@@ -547,7 +547,7 @@ span {
 .slider-content .slide-indicator h1 span {
     font-size: 52px;
 }
-.floating-coin-img img {
+.slider-content .floating-coin-img img {
     top: 0;
     left: -24%;
     width: 17%;
@@ -723,10 +723,10 @@ span {
     left: -10%;
     width: 10%;
 }
-.analytics-section .quickswap .floating-coin-img img {
-    top: 0;
+.analytics-section .quickswap .floating-coin-img img { 
     right: -10%;
     width: 10%;
+    bottom: 0%;
 }
 /* analytics sectioin end  */
 
