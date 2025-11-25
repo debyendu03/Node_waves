@@ -723,7 +723,7 @@ span {
     left: -10%;
     width: 10%;
 }
-.analytics-section .quickswap .floating-coin-img img { 
+.analytics-section .quickswap .floating-coin-img img {
     right: -10%;
     width: 10%;
     bottom: 0%;
@@ -825,7 +825,7 @@ span {
 @media screen and (min-width: 768px) {
     .main-title,
     .how-it-works-section .section-title {
-        font-size: 6.5rem;
+        font-size: 6rem;
         padding-bottom: 2rem;
     }
 
@@ -849,7 +849,7 @@ span {
 @media screen and (min-width: 992px) {
     .main-title,
     .how-it-works-section .section-title {
-        font-size: 8.8rem;
+        font-size: 8rem;
         padding-bottom: 3rem;
     }
 
@@ -878,7 +878,7 @@ span {
 @media screen and (min-width: 1200px) {
     .main-title,
     .how-it-works-section .section-title {
-        font-size: 10.5rem;
+        font-size: 10rem;
         padding-bottom: 6rem;
     }
 
