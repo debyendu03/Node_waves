@@ -761,7 +761,8 @@ span {
 .feature-number,
 .feature-title,
 .feature-description,
-.benefit-description {
+.benefit-description,
+.how-it-works-section .feature-description {
     font-size: 1.2rem;
     color: #fff;
     margin-bottom: 0;
@@ -775,7 +776,8 @@ span {
     text-transform: uppercase;
 }
 .feature-title,
-.benefit-title {
+.benefit-title,
+.how-it-works-section .feature-title {
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
 }
@@ -832,11 +834,13 @@ span {
 
     .intro-text,
     .feature-description,
-    .benefit-description {
+    .benefit-description,
+    .how-it-works-section .feature-description {
         font-size: 1.3rem;
     }
     .feature-title,
-    .benefit-title {
+    .benefit-title,
+    .how-it-works-section .feature-title {
         font-size: 1.5rem;
     }
 
@@ -858,11 +862,13 @@ span {
 
     .intro-text,
     .feature-description,
-    .benefit-description {
+    .benefit-description,
+    .how-it-works-section .feature-description {
         font-size: 1.45rem;
     }
     .feature-title,
-    .benefit-title {
+    .benefit-title,
+    .how-it-works-section .feature-title {
         font-size: 1.8rem;
     }
     .feature-description {
@@ -886,11 +892,13 @@ span {
 
     .intro-text,
     .feature-description,
-    .benefit-description {
+    .benefit-description,
+    .how-it-works-section .feature-description {
         font-size: 1.6rem;
     }
     .feature-title,
-    .benefit-title {
+    .benefit-title,
+    .how-it-works-section .feature-title {
         font-size: 2.2rem;
     }
     .feature-description {
@@ -977,51 +985,36 @@ span {
     padding: 60px 0;
     background: linear-gradient(180deg, #0a0000 0%, #1a0510 100%);
 }
-
-.how-it-works-section .features-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.how-it-works-section .feature-card {
+    padding: 30px 20px;
+    transition: all 0.3s ease;
 }
 
 @media (min-width: 768px) {
     .how-it-works-section .features-container {
-        flex-direction: row;
         gap: 40px;
+    }
+    .how-it-works-section .feature-icon {
+        width: 50px;
+        height: 50px;
+    }
+    .how-it-works-section .feature-card {
+        padding: 30px;
     }
 }
 
-.how-it-works-section .feature-card {
-    flex: 1;
-    background: rgba(139, 0, 0, 0.1);
-    border: 1px solid rgba(139, 0, 0, 0.3);
-    border-radius: 12px;
-    padding: 30px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    transition: all 0.3s ease;
-}
-
 .how-it-works-section .feature-card:hover {
-    background: rgba(139, 0, 0, 0.15);
-    border-color: rgba(139, 0, 0, 0.5);
     transform: translateY(-5px);
 }
 
 .how-it-works-section .feature-icon {
-    flex-shrink: 0;
     width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
     justify-content: center;
 }
 
 .how-it-works-section .feature-icon img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
-    filter: brightness(0) invert(1);
 }
 
 .how-it-works-section .feature-content {
@@ -1029,26 +1022,7 @@ span {
 }
 
 .how-it-works-section .feature-title {
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: #fff;
-}
-
-.how-it-works-section .feature-description {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: #ccc;
-    margin: 0;
-}
-
-@media (max-width: 767px) {
-    .how-it-works-section .feature-icon {
-        width: 50px;
-        height: 50px;
-    }
+    margin-bottom: 0.5rem;
 }
 
 /* How does nodewAVES WORKS section end */
