@@ -736,7 +736,7 @@ span {
     overflow: hidden;
 }
 
-.wave-background {
+/* .wave-background {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -744,7 +744,7 @@ span {
     height: 250px;
     background: radial-gradient(ellipse at bottom, rgba(138, 43, 226, 0.3) 0%, transparent 70%);
     z-index: 0;
-}
+} */
 
 .main-title,
 .key-benefits-section .section-title,
@@ -781,9 +781,9 @@ span {
 }
 
 .feature-number {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-right: 1.5rem;
-    margin-top: -11px;
+    margin-top: -4px;
 }
 
 .main-title .node,
@@ -841,7 +841,7 @@ span {
     }
 
     .feature-number {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .cubes-image {
         max-width: 60%;
@@ -869,7 +869,7 @@ span {
         max-width: 80%;
     }
     .feature-number {
-        font-size: 4.5rem;
+        font-size: 4rem;
     }
     .cubes-image {
         max-width: 70%;
@@ -897,7 +897,7 @@ span {
         max-width: 75%;
     }
     .feature-number {
-        font-size: 5.5rem;
+        font-size: 5rem;
     }
     .cubes-image {
         max-width: 90%;
