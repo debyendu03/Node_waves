@@ -527,7 +527,8 @@ span {
 }
 
 .slider-content .text-content .des-and-button .btn,
-.analytics-section .btn {
+.analytics-section .btn,
+.key-features-section .btn {
     font-family: Montserrat;
     font-weight: 400;
     font-style: regular;
@@ -561,7 +562,8 @@ span {
     .join-the-dao-slide .text-content .heading h1 {
         font-size: 6.7rem;
     }
-    .slider-content .text-content .des-and-button .btn {
+    .slider-content .text-content .des-and-button .btn,
+    .key-features-section .btn {
         font-size: 1.4rem;
     }
     .slider-content .text-content .des-text {
@@ -588,7 +590,8 @@ span {
         font-size: 7.5rem;
     }
     .slider-content .text-content .des-and-button .btn,
-    .slider-content .text-content .des-text {
+    .slider-content .text-content .des-text,
+    .key-features-section .btn {
         font-size: 1.6rem;
     }
     .coin-img-container-div {
@@ -608,7 +611,8 @@ span {
         font-size: 8.5rem;
     }
     .slider-content .text-content .des-and-button .btn,
-    .slider-content .text-content .des-text {
+    .slider-content .text-content .des-text,
+    .key-features-section .btn {
         font-size: 1.7rem;
     }
     .coin-img-container-div {
@@ -748,7 +752,8 @@ span {
 
 .main-title,
 .key-benefits-section .section-title,
-.how-it-works-section .section-title {
+.how-it-works-section .section-title,
+.key-features-section .section-title {
     font-size: 3.8rem;
     font-weight: bold;
     text-transform: uppercase;
@@ -762,7 +767,8 @@ span {
 .feature-title,
 .feature-description,
 .benefit-description,
-.how-it-works-section .feature-description {
+.how-it-works-section .feature-description,
+.key-features-section .feature-description {
     font-size: 1.2rem;
     color: #fff;
     margin-bottom: 0;
@@ -777,7 +783,8 @@ span {
 }
 .feature-title,
 .benefit-title,
-.how-it-works-section .feature-title {
+.how-it-works-section .feature-title,
+.key-features-section .feature-title {
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
 }
@@ -790,7 +797,8 @@ span {
 
 .main-title .node,
 .key-benefits-section .benefits,
-.how-it-works-section .works {
+.how-it-works-section .works,
+.key-features-section .section-title span {
     color: var(--custom-pink);
 }
 
@@ -827,7 +835,8 @@ span {
 @media screen and (min-width: 768px) {
     .main-title,
     .key-benefits-section .section-title,
-    .how-it-works-section .section-title {
+    .how-it-works-section .section-title,
+    .key-features-section .section-title {
         font-size: 5rem;
         padding-bottom: 2rem;
     }
@@ -835,12 +844,14 @@ span {
     .intro-text,
     .feature-description,
     .benefit-description,
-    .how-it-works-section .feature-description {
+    .how-it-works-section .feature-description,
+    .key-features-section .feature-description {
         font-size: 1.3rem;
     }
     .feature-title,
     .benefit-title,
-    .how-it-works-section .feature-title {
+    .how-it-works-section .feature-title,
+    .key-features-section .feature-title {
         font-size: 1.5rem;
     }
 
@@ -855,7 +866,8 @@ span {
 @media screen and (min-width: 992px) {
     .main-title,
     .key-benefits-section .section-title,
-    .how-it-works-section .section-title {
+    .how-it-works-section .section-title,
+    .key-features-section .section-title {
         font-size: 6rem;
         padding-bottom: 3rem;
     }
@@ -863,12 +875,14 @@ span {
     .intro-text,
     .feature-description,
     .benefit-description,
-    .how-it-works-section .feature-description {
+    .how-it-works-section .feature-description,
+    .key-features-section .feature-description {
         font-size: 1.45rem;
     }
     .feature-title,
     .benefit-title,
-    .how-it-works-section .feature-title {
+    .how-it-works-section .feature-title,
+    .key-features-section .feature-title {
         font-size: 1.8rem;
     }
     .feature-description {
@@ -885,7 +899,8 @@ span {
 @media screen and (min-width: 1200px) {
     .main-title,
     .key-benefits-section .section-title,
-    .how-it-works-section .section-title {
+    .how-it-works-section .section-title,
+    .key-features-section .section-title {
         font-size: 7rem;
         padding-bottom: 3rem;
     }
@@ -893,7 +908,8 @@ span {
     .intro-text,
     .feature-description,
     .benefit-description,
-    .how-it-works-section .feature-description {
+    .how-it-works-section .feature-description,
+    .key-features-section .feature-description {
         font-size: 1.6rem;
     }
     .feature-title,
@@ -920,10 +936,8 @@ span {
 
 .section-title {
     text-align: center;
-    /* margin-bottom: 60px; */
     font-size: 3rem;
     font-weight: 700;
-    /* letter-spacing: 2px; */
 }
 
 .section-title .key {
@@ -1026,3 +1040,26 @@ span {
 }
 
 /* How does nodewAVES WORKS section end */
+/* <!-- Key FEATURES section start  --> */
+.key-features-section img {
+    max-width: 19em;
+}
+
+.key-features-section .description {
+    padding: 30px 20px;
+}
+.key-features-section .description a {
+    padding: 0.4em 1.2em;
+}
+.key-features-section section .floating-coin-img img {
+    right: 0;
+    width: 8%;
+    position: absolute;
+}
+@media screen and (min-width: 768px) {
+    .key-features-section .btn-div {
+        /* width: 75%; */
+    }
+}
+
+/* <!-- Key FEATURES section end  --> */
