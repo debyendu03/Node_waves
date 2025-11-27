@@ -625,26 +625,6 @@ span {
     }
 }
 
-@media screen and (min-width: 1200px) {
-    .text-content .heading h1,
-    .your-first-step-slide .text-content .heading h1,
-    .join-the-dao-slide .text-content .heading h1 {
-        font-size: 8.5rem;
-    }
-    .slider-content .text-content .des-and-button .btn,
-    .slider-content .text-content .des-text {
-        font-size: 1.8rem;
-    }
-    .coin-img-container-div {
-        width: 124%;
-        bottom: -20%;
-        left: -50%;
-    }
-    .slide-indicator {
-        margin-top: 9%;
-    }
-}
-
 /* responsive for table slider section start */
 /*______________________ slider section end _________________________*/
 /* infinite section css start */
