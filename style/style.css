@@ -246,7 +246,8 @@ span {
 }
 
 .containerX {
-    margin: 0 12rem !important;
+  margin: 0 12rem !important;
+  max-height: 130px;
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
@@ -471,34 +472,7 @@ span {
     left: 0;
     z-index: -1;
 }
-.slider-bg-1 {
-    transform: scale(1.2) translate(-27%, 34%);
-}
-@media (min-width: 425px) {
-    .slider-bg-1 {
-        transform: scale(1.2) translate(-25%, 34%);
-    }
-}
-@media (min-width: 768px) {
-    .slider-bg-1 {
-        transform: scale(1.5) translate(15%, 24%);
-    }
-}
-@media (min-width: 992px) {
-    .slider-bg-1 {
-        transform: scale(1.5) translate(14%, 24%);
-    }
-}
-@media (min-width: 1200px) {
-    .slider-bg-1 {
-        transform: scale(1.5) translate(16%, 24%);
-    }
-}
-@media (min-width: 1400px) {
-    .slider-bg-1 {
-        transform: scale(1.5) translate(14%, 24%);
-    }
-}
+
 
 /* Styling for the main headings */
 
@@ -600,7 +574,8 @@ span {
         left: -25%;
     }
     .slide-indicator {
-        margin-top: 7%;
+        margin-top: 8%;
+    margin-bottom: 8%;
     }
 }
 
@@ -623,6 +598,26 @@ span {
     .slide-indicator {
         margin-top: 8%;
     }
+}
+
+@media screen and (min-width: 1200px) {
+  .text-content .heading h1,
+  .your-first-step-slide .text-content .heading h1,
+  .join-the-dao-slide .text-content .heading h1 {
+    font-size: 6.5rem;
+  }
+  .slider-content .text-content .des-and-button .btn,
+  .slider-content .text-content .des-text {
+    font-size: 1.7rem;
+  }
+  .coin-img-container-div {
+    width: 124%;
+    bottom: -20%;
+    left: -50%;
+  }
+  .slide-indicator {
+    margin-top: 9%;
+  }
 }
 
 /* responsive for table slider section start */
