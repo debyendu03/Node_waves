@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/slider.css" />
   </head>
 
   <body>
@@ -138,7 +139,8 @@
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active position-relative">
+            <!-- 1st hero slide -->
+            <div class="carousel-item position-relative">
               <div class="slider-content">
                 <div
                   class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7"
@@ -215,7 +217,7 @@
                 <!-- background image start -->
               </div>
             </div>
-
+            <!-- 2nd hero slide -->
             <div class="your-first-step-slide carousel-item position-relative">
               <div class="slider-content">
                 <div
@@ -286,16 +288,18 @@
                 <!-- background image start -->
                 <div class="slider-bg-img-container-div">
                   <img
-                    class="slider-bg-img position-absolute col-md-12"
+                    class="slider-bg-2 slider-bg-img position-absolute col-md-12"
                     src="images/slider-bg-2.png"
                     alt=" slider bg 2"
                   />
                 </div>
-                <!-- background image start -->
+                <!-- background image end -->
               </div>
             </div>
-            <!-- third and forth slide needs review -->
-            <div class="join-the-dao-slide carousel-item position-relative">
+            <!-- 3rd hero slide -->
+            <div
+              class="join-the-dao-slide active carousel-item position-relative"
+            >
               <div class="slider-content">
                 <div
                   class="main-content row mx-auto container ps-md-5 col-md-10 px-md-0 col-lg-9 col-xl-8 col-xxl-7"
@@ -344,15 +348,19 @@
                           </div>
                         </div>
                       </div>
-
                       <div
                         class="position-relative coin-stand text-center col-md-4 col-xl-5 col-xxl-5"
                       >
-                        <div class="coin-img-container-div bg-blub-img">
+                        <div class="coin-img-container-div invisible">
                           <img
-                            src="images/slider-bg-3.png"
-                            alt=" slider bg 3"
-                            class="coin-image coin-image img-fluid col-md-12"
+                            src="images/coin-mobile.png"
+                            alt="NodeWaves Coin"
+                            class="coin-image-for-mobile coin-image img-fluid col-9 d-md-none"
+                          />
+                          <img
+                            src="images/coin.png"
+                            alt="NodeWaves Coin"
+                            class="coin-image coin-image img-fluid d-none d-md-block col-md-12"
                           />
                         </div>
                       </div>
@@ -367,13 +375,13 @@
                   <!-- slide indicator end -->
                 </div>
                 <!-- background image start -->
-                <!-- <div class="slider-bg-img-container-div">
-                                    <img
-                                        class="slider-bg-img position-absolute col-md-12"
-                                        src="images/slider-bg-3.png"
-                                        alt=" slider bg 3"
-                                    />
-                                </div> -->
+                <div class="slider-bg-img-container-div">
+                  <img
+                    class="slider-bg-3 slider-bg-img position-absolute col-md-12"
+                    src="images/slider-bg-3.png"
+                    alt=" slider bg 3"
+                  />
+                </div>
                 <!-- background image start -->
               </div>
             </div>
