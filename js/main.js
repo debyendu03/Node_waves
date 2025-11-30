@@ -4,10 +4,12 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-const values = [25, 25, 3, 10, 15, 5, 5, 2, 2, 5];
+const values = [25, 25, 3, 10, 15, 5, 5, 2, 2, 2, 5];
 const colors = [
     "#00FF99", "#5751B3", "#FF9304",
-    "#FFFFFF", "#FF0404", "#302D96", "#FF04C9", "#87BD23", "#2947BE", "#D40D6D", "#FDE006"
+    "#FFFFFF", "#FF0404", "#302D96",
+    "#FF04C9", "#87BD23", "#2947BE",
+    "#D40D6D", "#FDE006"
 ];
 
 function drawGraph() {
@@ -22,8 +24,8 @@ function drawGraph() {
 
     const cx = canvas.width / 2;
     const cy = canvas.height / 2;
-    const radius = canvas.width * 0.35; // responsive radius
-    const lineWidth = canvas.width * 0.03; // responsive thickness
+    const radius = canvas.width * 0.35;
+    const lineWidth = canvas.width * 0.03;
 
     const GAP_ANGLE = 0.1;
 
@@ -49,9 +51,37 @@ function drawGraph() {
     });
 }
 
-// Draw initial
 drawGraph();
 
-// Redraw on window resize (responsive)
-window.addEventListener("resize", drawGraph);
 
+const names = [
+    "POB", "Node", "Seed & Private sales", "Dev & Ecosystem",
+    "Liquidity", "M2E", "P2E", "Treasury", "Advisors", "Team", "POS"
+];
+
+const tokenomicsData = names.map((name, index) => ({
+    name: name,
+    value: values[index],
+    color: colors[index]
+}));
+
+
+function renderTokenomicsList(data) {
+    const listContainer = document.getElementById("dynamic-token-list");
+    listContainer.innerHTML = "";
+
+    data.forEach((item) => {
+        const listItemHTML = `
+            <li class="custom-list-item">
+                <div class="color-marker" style="background-color: ${item.color};"></div>
+                <div class="category-name line-graph-data">${item.name}</div>
+                <div class="percentage-value line-graph-data">${item.value}%</div>
+            </li>
+        `;
+
+        listContainer.insertAdjacentHTML("beforeend", listItemHTML);
+    });
+}
+
+
+renderTokenomicsList(tokenomicsData);
