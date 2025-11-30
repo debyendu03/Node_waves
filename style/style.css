@@ -762,7 +762,9 @@ span {
 .feature-title,
 .benefit-title,
 .how-it-works-section .feature-title,
-.key-features-section .feature-title {
+.key-features-section .feature-title,
+.ecosystem-section-details .feature-title,
+.ecosystem-section-details .feature-item .feature-title {
     font-size: 1.4rem;
     margin-bottom: 0.3rem;
 }
@@ -833,7 +835,9 @@ span {
     .feature-title,
     .benefit-title,
     .how-it-works-section .feature-title,
-    .key-features-section .feature-title {
+    .key-features-section .feature-title,
+    .ecosystem-section-details .feature-title,
+    .ecosystem-section-details .feature-item .feature-title {
         font-size: 1.5rem;
     }
 
@@ -868,7 +872,9 @@ span {
     .feature-title,
     .benefit-title,
     .how-it-works-section .feature-title,
-    .key-features-section .feature-title {
+    .key-features-section .feature-title,
+    .ecosystem-section-details .feature-title,
+    .ecosystem-section-details .feature-item .feature-title {
         font-size: 1.8rem;
     }
     .feature-description {
@@ -904,7 +910,9 @@ span {
     }
     .feature-title,
     .benefit-title,
-    .how-it-works-section .feature-title {
+    .how-it-works-section .feature-title,
+    .ecosystem-section-details .feature-title,
+    .ecosystem-section-details .feature-item .feature-title {
         font-size: 2.2rem;
     }
     .feature-description {
@@ -1409,4 +1417,76 @@ span {
         color: rgba(230, 230, 230, 1);
     }
 }
+.features-grid {
+    padding: 3em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3em;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 4em;
+}
+.features-grid::after {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 50%;
+    content: "";
+    height: 0px;
+    background-color: red;
+    box-shadow: 0px -40px 140px 19px red;
+    transform: translateX(-50%);
+    border-radius: 85%;
+}
+.feature-item {
+    display: flex;
+    gap: 12px;
+    color: #fff;
+    width: 50%;
+    align-items: center;
+}
+
+.feature-item img {
+    width: 2em;
+    height: 2em;
+    flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+    .features-grid {
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 0;
+        padding: 3em 0 0 0;
+    }
+    .feature-item {
+        width: 33.33%;
+        padding: 0 0 3em 5em;
+    }
+    .feature-item img {
+        width: 3em;
+        height: 3em;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .feature-item img {
+        width: 4em;
+        height: 4em;
+    }
+    .feature-item {
+        padding: 0 0 3em 7em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .feature-item {
+        padding: 0 0 3em 9em;
+    }
+}
+
 /* <!-- ECOSYSTEM section end --> */
