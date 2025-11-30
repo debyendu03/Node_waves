@@ -1068,8 +1068,9 @@ span {
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(4, auto);
-    border: 1px solid gray;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
 }
 
 .graph-container {
@@ -1131,7 +1132,7 @@ span {
     border: none;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #afaeae;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .custom-list-item:last-child {
     border: 0;
@@ -1447,6 +1448,7 @@ span {
     color: #fff;
     width: 50%;
     align-items: center;
+    /* justify-content: center; */
 }
 
 .feature-item img {
